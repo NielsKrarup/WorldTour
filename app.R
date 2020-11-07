@@ -38,6 +38,7 @@ ebola_col = "#016c59"
 # import data
 cv_cases = read.csv("input_data/coronavirus.csv")
 sars_cases = read.csv("input_data/sars.csv")
+colnames(sars_cases)[1] <- "country" #hotfix
 countries = read.csv("input_data/countries_codes_and_coordinates.csv")
 ebola_cases = read.csv("input_data/ebola.csv")
 h1n1_cases = read.csv("input_data/h1n1.csv")
